@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JorgeFolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" type="image/png" href="resources/javiermilei.png">
+
+</head>
+<body class="bg-black text-gray-200 font-gothic">
+    <nav class="fixed w-full z-50 bg-opacity-80 bg-black backdrop-filter backdrop-blur-sm">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex justify-between items-center">
+                <div class="text-xl font-semibold">J<span class="text-gray-500">orge</span></div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#inicio" class="hover:text-gray-400 transition-colors">Inicio</a>
+                    <a href="#sobre-mi" class="hover:text-gray-400 transition-colors">Sobre mí</a>
+                    <a href="#habilidades" class="hover:text-gray-400 transition-colors">Habilidades</a>
+                    <a href="#proyectos" class="hover:text-gray-400 transition-colors">Proyectos</a>
+                    <a href="#contacto" class="hover:text-gray-400 transition-colors">Contacto</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="focus:outline-none">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-black bg-opacity-95 w-full">
+            <div class="container mx-auto px-6 py-3 flex flex-col space-y-4">
+                <a href="#inicio" class="hover:text-gray-400 transition-colors">Inicio</a>
+                <a href="#sobre-mi" class="hover:text-gray-400 transition-colors">Sobre mí</a>
+                <a href="#habilidades" class="hover:text-gray-400 transition-colors">Habilidades</a>
+                <a href="#proyectos" class="hover:text-gray-400 transition-colors">Proyectos</a>
+                <a href="#contacto" class="hover:text-gray-400 transition-colors">Contacto</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="inicio" class="h-screen flex items-center justify-center relative overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div id="particles-js"></div>
+        </div>
+        <div class="container mx-auto px-6 text-center relative z-10">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 fade-in">
+                <span class="block">Jorge</span>
+                <span class="block text-2xl md:text-3xl mt-2 text-gray-400">Experto en el arte de la Manualidad</span>
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 fade-in-delay">Domino el arte de la procrastinación avanzada desde 2008</p>
+            <div class="meme-container fade-in-delay-2">
+                <div class="meme-text">Bienvenido a mi portafolio</div>
+                <div class="meme-image">
+                    <img src="resources/EkileGodOfCarton.png" alt="Placeholder meme" class="mx-auto rounded-lg shadow-lg">
+                </div>
+                <div class="meme-caption">"La Paja mi talento."</div>
+            </div>
+            <div class="mt-12">
+                <a href="#sobre-mi" class="scroll-arrow">
+                    <i class="fas fa-chevron-down fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="py-24 bg-gradient-to-b from-black to-stone-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center relative section-title">Sobre Mí</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/3 mb-12 md:mb-0">
+                    <div class="profile-frame">
+                        <img src="resources/ekile.png" alt="Perfil de Jorge" class="rounded-full mx-auto grayscale hover:grayscale-0 transition-all duration-500">
+                    </div>
+                </div>
+                <div class="md:w-2/3 md:pl-12">
+                    <p class="text-lg mb-6">Mi nombre es Jorge, tengo 16 años y he perfeccionado el arte de convertir 24 horas en absolutamente nada productivo. Algunos llaman a esto "perder el tiempo", yo lo llamo "administración creativa del ocio".</p>
+                    <p class="text-lg mb-6">Desde pequeño supe que mi talento no estaba en hacer cosas, sino en contemplar cómo otros las hacían. Mi capacidad para evitar responsabilidades ha alcanzado niveles místicos que ni los monjes tibetanos han logrado.</p>
+                    <p class="text-lg">Actualmente dedico mi existencia a investigar cuántos videos porno puedo ver sin parpadear y a desarrollar técnicas revolucionarias para parecer ocupado cuando realmente estoy pensando en clavarme una japurra</p>
+                    <div class="stats mt-12 grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <div class="stat p-4 rounded-lg bg-stone-800 bg-opacity-50">
+                            <div class="text-4xl font-bold">16</div>
+                            <div class="text-sm text-gray-400">Años procrastinando</div>
+                        </div>
+                        <div class="stat p-4 rounded-lg bg-stone-800 bg-opacity-50">
+                            <div class="text-4xl font-bold">∞</div>
+                            <div class="text-sm text-gray-400">Horas en PornHub</div>
+                        </div>
+                        <div class="stat p-4 rounded-lg bg-stone-800 bg-opacity-50">
+                            <div class="text-4xl font-bold">0</div>
+                            <div class="text-sm text-gray-400">Logros destacables</div>
+                        </div>
+                        <div class="stat p-4 rounded-lg bg-stone-800 bg-opacity-50">
+                            <div class="text-4xl font-bold">24/7</div>
+                            <div class="text-sm text-gray-400">Disponibilidad para la paja</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades" class="py-24 bg-gradient-to-b from-stone-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center relative section-title">Habilidades Excepcionales</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="skill-card">
+                    <div class="icon-container">
+                        <i class="fas fa-tv"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Maratonear Series</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 95%">
+                            <span class="skill-percent">95%</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">Capaz de terminar una serie de Minecraft en 6 horas.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-container">
+                        <i class="fas fa-ghost"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Evasión Pajurra</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 99%">
+                            <span class="skill-percent">99%</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">Maestría en convertir actividades del colegio en momentos de Masturbacion</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-container">
+                        <i class="fa-solid fa-user-secret"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Stalk</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 90%">
+                            <span class="skill-percent">90%</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">Acosar de una forma discreta a cualquier persona</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-container">
+                        <i class="fas fa-exclamation-circle"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Excusas Creativas</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 97%">
+                            <span class="skill-percent">97%</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">Inventar justificaciones tan elaboradas que hasta yo me las creo.</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-container">
+                        <i class="fas fa-hourglass-end"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Dilación Profesional</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 100%">
+                            <span class="skill-percent">100%</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">Convertir "lo hago mañana" en un estilo de vida</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon-container">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">Scroll</h3>
+                    <div class="skill-bar">
+                        <div class="skill-level" style="width: 98%">
+                            <span class="skill-percent">98%</span>
+                        </div>
+                    </div>
+                    <p class="mt-4">Capacidad de scrollear en Twitter por mas de 5 horas consecutivas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos" class="py-24 bg-gradient-to-b from-black to-stone-900">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center relative section-title">Proyectos (Pendientes)</h2>
+            <div class="text-center mb-12">
+                <div class="waiting-animation">
+                    <i class="fas fa-hourglass rotate"></i>
+                </div>
+                <h3 class="text-2xl mt-6">Aún sigo esperando la motivación...</h3>
+                <p class="text-gray-400 mt-4">Todos mis proyectos están en fase de "planificación conceptual"</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+                <div class="project-card">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Ordenar mi pieza</h4>
+                        <p class="text-gray-400">Progreso: 2% - En pausa desde 2017</p>
+                        <div class="progress-bar mt-4">
+                            <div class="progress" style="width: 2%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Limpiar las manchas de semen de la cama</h4>
+                        <p class="text-gray-400">Progreso: 15% - Trabajando cuando me acuerdo</p>
+                        <div class="progress-bar mt-4">
+                            <div class="progress" style="width: 15%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="p-6">
+                        <h4 class="text-xl font-bold mb-2">Guía definitiva de cómo parecer ocupado</h4>
+                        <p class="text-gray-400">Progreso: 0% - Lo empezaré mañana (tal vez)</p>
+                        <div class="progress-bar mt-4">
+                            <div class="progress" style="width: 0%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-24 bg-gradient-to-b from-stone-900 to-black">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center relative section-title">No Me Contactes</h2>
+            <div class="text-center mb-12">
+                <p class="text-xl">Estoy demasiado ocupado no haciendo nada como para responder</p>
+                <p class="text-gray-400 mt-4">Pero si realmente insistes...</p>
+            </div>
+            <div class="flex justify-center space-x-6 mt-10">
+                <a href="https://www.instagram.com/ekileversion2/" class="social-icon" data-tooltip="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://x.com/ekilezzz" class="social-icon" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com/@miakhalifa" class="social-icon" data-tooltip="TikTok">
+                    <i class="fab fa-tiktok"></i>
+                </a>
+                <a href="#contacto" class="social-icon" data-tooltip="ekilezzz">
+                    <i class="fab fa-discord"></i>
+                </a>
+            </div>
+            <div class="mt-16 text-center">
+                <button id="contact-btn" class="contact-button">
+                    <span>No me hables, estoy ocupado sin hacer nada</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-6 bg-black">
+        <div class="container mx-auto px-6 text-center text-gray-500">
+            <p>&copy; 2025 Jorge | Profesional del tiempo libre</p>
+            <p class="mt-2 text-sm flex items-center justify-center gap-2">
+                <img src="https://visage.surgeplay.com/head/1008/zPaio_" 
+                     alt="zPaio_" 
+                     class="minecraft-skin w-6 h-6" />
+                 Created by zPaio_
+                <img src="https://visage.surgeplay.com/head/1008/zPaio_" 
+                     alt="zPaio_" 
+                     class="minecraft-skin w-6 h-6" />
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
